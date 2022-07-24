@@ -127,12 +127,13 @@ Partial Class Form1
         '
         'Guna2Elipse1
         '
-        Me.Guna2Elipse1.BorderRadius = 130
+        Me.Guna2Elipse1.BorderRadius = 0
         Me.Guna2Elipse1.TargetControl = Me
         '
         'Guna2Button1
         '
         Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -149,6 +150,7 @@ Partial Class Form1
         'Guna2Button2
         '
         Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -158,6 +160,7 @@ Partial Class Form1
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.Location = New System.Drawing.Point(541, 767)
         Me.Guna2Button2.Name = "Guna2Button2"
+        Me.Guna2Button2.PressedColor = System.Drawing.Color.White
         Me.Guna2Button2.Size = New System.Drawing.Size(420, 164)
         Me.Guna2Button2.TabIndex = 8
         Me.Guna2Button2.Text = "Guna2Button2"
@@ -167,7 +170,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(1440, 1024)
         Me.Controls.Add(Me.Guna2Button2)
         Me.Controls.Add(Me.Guna2Button1)
@@ -183,7 +186,9 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
