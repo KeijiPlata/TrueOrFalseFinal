@@ -153,6 +153,7 @@ Public Class Form1
             timee = 5 ' reset time
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
+            Label4.Text = score.ToString
         Else
             Highest()
             Form2.displayScore = score
@@ -170,6 +171,7 @@ Public Class Form1
             timee = 5 'reset time
             Label3.ForeColor = Color.Green
             Label3.Text = timee.ToString
+            Label4.Text = score.ToString
         Else
             Highest()
             Form2.displayScore = score
