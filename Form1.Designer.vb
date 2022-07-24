@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,6 +32,8 @@ Partial Class Form1
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Guna2Elipse1 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
+        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -38,9 +41,10 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(63, 203)
+        Me.Button1.Location = New System.Drawing.Point(84, 250)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(219, 120)
+        Me.Button1.Size = New System.Drawing.Size(292, 148)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "True"
         Me.Button1.UseVisualStyleBackColor = False
@@ -50,9 +54,10 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(365, 203)
+        Me.Button2.Location = New System.Drawing.Point(487, 250)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(219, 120)
+        Me.Button2.Size = New System.Drawing.Size(292, 148)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "False"
         Me.Button2.UseVisualStyleBackColor = False
@@ -61,9 +66,10 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(145, 93)
+        Me.Label1.Location = New System.Drawing.Point(193, 114)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(48, 16)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Label1"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -72,9 +78,10 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label2.Location = New System.Drawing.Point(392, 55)
+        Me.Label2.Location = New System.Drawing.Point(523, 68)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(33, 13)
+        Me.Label2.Size = New System.Drawing.Size(42, 16)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Timer"
         '
@@ -83,9 +90,10 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Green
-        Me.Label3.Location = New System.Drawing.Point(382, 88)
+        Me.Label3.Location = New System.Drawing.Point(509, 108)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(68, 73)
+        Me.Label3.Size = New System.Drawing.Size(83, 91)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "5"
         '
@@ -98,9 +106,10 @@ Partial Class Form1
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(501, 88)
+        Me.Label4.Location = New System.Drawing.Point(668, 108)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(68, 73)
+        Me.Label4.Size = New System.Drawing.Size(83, 91)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "0"
         '
@@ -108,18 +117,42 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label5.Location = New System.Drawing.Point(511, 55)
+        Me.Label5.Location = New System.Drawing.Point(681, 68)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(35, 13)
+        Me.Label5.Size = New System.Drawing.Size(43, 16)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Score"
         '
+        'Guna2Elipse1
+        '
+        Me.Guna2Elipse1.BorderRadius = 130
+        Me.Guna2Elipse1.TargetControl = Me
+        '
+        'Guna2Button1
+        '
+        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2Button1.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
+        Me.Guna2Button1.Location = New System.Drawing.Point(41, 767)
+        Me.Guna2Button1.Name = "Guna2Button1"
+        Me.Guna2Button1.Size = New System.Drawing.Size(450, 164)
+        Me.Guna2Button1.TabIndex = 7
+        Me.Guna2Button1.Text = "Guna2Button1"
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(651, 354)
+        Me.ClientSize = New System.Drawing.Size(1440, 1024)
+        Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
@@ -128,6 +161,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -143,4 +178,6 @@ Partial Class Form1
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Guna2Elipse1 As Guna.UI2.WinForms.Guna2Elipse
+    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
 End Class
