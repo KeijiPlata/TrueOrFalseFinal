@@ -38,7 +38,7 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.Color.DarkTurquoise
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(231, 222)
+        Me.Button1.Location = New System.Drawing.Point(63, 203)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(219, 120)
         Me.Button1.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Form1
         Me.Button2.BackColor = System.Drawing.Color.Red
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(231, 73)
+        Me.Button2.Location = New System.Drawing.Point(365, 203)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(219, 120)
         Me.Button2.TabIndex = 1
